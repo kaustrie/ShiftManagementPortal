@@ -1,2 +1,24 @@
-<app-main-nav></app-main-nav>
-<app-sub-nav></app-sub-nav>
+<div class="main-container">
+    <div class="alert alert-app-level">
+        
+    </div>
+  <app-main-nav></app-main-nav>
+  <app-sub-nav></app-sub-nav>
+  <div class="content-container">
+      <!-- <nav class="sidenav">
+          ...
+      </nav> -->
+      <clr-vertical-nav>
+          <a clrVerticalNavLink routerLink="./charmander" routerLinkActive="active">Charmander</a>
+          <a clrVerticalNavLink routerLink="./jigglypuff" routerLinkActive="active">Jigglypuff</a>
+          <a clrVerticalNavLink routerLink="./event/list" routerLinkActive="active">Pikachu</a>
+          <a clrVerticalNavLink routerLink="./raichu" routerLinkActive="active">Raichu</a>
+          <a clrVerticalNavLink routerLink="./snorlax" routerLinkActive="active">Snorlax</a>
+          <a clrVerticalNavLink routerLink="./credit" routerLinkActive="active">Credit</a>
+      </clr-vertical-nav>
+      <div class="content-area">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+
+</div>
